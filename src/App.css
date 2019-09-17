@@ -1,4 +1,9 @@
 .App {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
