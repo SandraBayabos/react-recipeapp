@@ -4,15 +4,15 @@ import style from "./recipe.module.css";
 //passing down title, calories and image as props
 const Recipe = ({ title, calories, image, ingredients }) => {
   return (
-    <div>
-      <h1 className={style.recipe}>{title}</h1>
+    <div className={style.recipe}>
+      <h1>{title}</h1>
       <ol>
         {ingredients.map(ingredient => (
           <li>{ingredient.text}</li>
         ))}
       </ol>
       <p>{calories}</p>
-      <img src={image} alt="" />
+      <img className={style.image} src={image} alt="" />
     </div>
   );
 };
